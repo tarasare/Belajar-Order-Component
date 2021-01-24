@@ -5,7 +5,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
-@Order(4)
+@Order(Ordered.LOWEST_PRECEDENCE)
 public class GolonganKeempat implements Golongan{
     @Override
     public int getGolongan() {
